@@ -1,8 +1,7 @@
 //your JS code here. If requir
-document.addEventListner('DOMContentLoaded',fucntion(){
-let div = getElementById("browser-info");
-let appName = navigator.appName;
-let versionName = navigator.appVersion;
-div.innerText = You are using " + appName + " version " + versionName
-
-})
+document.addEventListener('DOMContentLoaded', function() {
+    var browserInfoDiv = document.getElementById('browser-info');
+    var browserName = navigator.appName;
+    var version = navigator.appVersion;
+    browserInfoDiv.innerText = "You are using " + browserName + " version " + version;
+});
